@@ -8,9 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
-import org.heaven7.core.adapter.ISelectable;
-import org.heaven7.core.adapter.QuickAdapter;
-import org.heaven7.core.viewhelper.ViewHelper;
+import com.heaven7.adapter.ISelectable;
+import com.heaven7.adapter.QuickAdapter;
+import com.heaven7.core.util.ViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +47,7 @@ public abstract class AbsMainActivity extends ListActivity {
 
     }
 
-    public static class ActivityInfo implements ISelectable{
+    public static class ActivityInfo implements ISelectable {
         final String desc;
         final Class<? extends Activity> clazz;
 
