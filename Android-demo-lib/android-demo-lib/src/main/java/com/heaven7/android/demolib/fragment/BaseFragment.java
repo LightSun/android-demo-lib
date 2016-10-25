@@ -51,7 +51,7 @@ public abstract class BaseFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(getlayoutId(),container,false);
+        return inflater.inflate(getLayoutId(),container,false);
     }
 
     @Override
@@ -60,18 +60,7 @@ public abstract class BaseFragment extends Fragment {
         mToaster = new Toaster(ctx);
         mViewHelper = new ViewHelper(view);
       //  mHttpExecutor = new VolleyUtil.HttpExecutor();
-        initView(ctx);
-        initData(ctx, savedInstanceState);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
+        init(ctx, savedInstanceState);
     }
 
     protected void showToast(String msg){
@@ -108,13 +97,9 @@ public abstract class BaseFragment extends Fragment {
         }
     }
 
-    protected abstract int getlayoutId();
+    protected abstract int getLayoutId();
 
-    protected void initView(Context context){
-
-    }
-
-    protected abstract void initData(Context context, Bundle savedInstanceState);
+    protected abstract void init(Context context, Bundle savedInstanceState);
 
     public  interface ICallback{
        void callback(int key, Object data);
