@@ -8,14 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android-demo-lib" />
+            <option value="$PROJECT_DIR$/android-lib-sample" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android-demo-lib" />
+            <option value="$PROJECT_DIR$/android-lib-sample" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
