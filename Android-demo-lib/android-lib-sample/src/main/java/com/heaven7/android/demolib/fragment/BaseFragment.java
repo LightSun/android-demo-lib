@@ -89,7 +89,7 @@ public abstract class BaseFragment extends Fragment {
     public void setCallback(ICallback mCallback) {
         this.mCallback = mCallback;
     }
-    public void callbackIfNeed(int key,Object data){
+    public void callbackIfNeed(int key, Object data){
         if(mCallback != null){
             mCallback.callback(key,data);
         }else{
